@@ -1,9 +1,9 @@
-package com.example.data.remote.paging
+package com.example.data.paging
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.example.data.api.ImageApi
-import com.example.data.remote.mapper.ImageMapper
+import com.example.data.mapper.ImageMapper
 import com.example.domain.model.ImageEntity
 
 class ImagePagingSource(

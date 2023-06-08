@@ -1,4 +1,4 @@
-package com.example.data.remote.response
+package com.example.data.response
 
 data class MetaData(
     val total_count: Int,

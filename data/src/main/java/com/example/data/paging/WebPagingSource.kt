@@ -1,9 +1,9 @@
-package com.example.data.remote.paging
+package com.example.data.paging
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.example.data.remote.api.WebApi
-import com.example.data.remote.mapper.WebMapper
+import com.example.data.api.WebApi
+import com.example.data.mapper.WebMapper
 import com.example.domain.model.WebEntity
 
 class WebPagingSource(

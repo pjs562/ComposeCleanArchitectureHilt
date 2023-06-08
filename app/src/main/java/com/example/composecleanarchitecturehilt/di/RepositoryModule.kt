@@ -2,11 +2,11 @@ package com.example.composecleanarchitecturehilt.di
 
 import com.example.data.api.ImageApi
 import com.example.data.mapper.SearchHistoryMapper
-import com.example.data.remote.api.VideoApi
-import com.example.data.remote.api.WebApi
-import com.example.data.remote.mapper.ImageMapper
-import com.example.data.remote.mapper.VideoMapper
-import com.example.data.remote.mapper.WebMapper
+import com.example.data.api.VideoApi
+import com.example.data.api.WebApi
+import com.example.data.mapper.ImageMapper
+import com.example.data.mapper.VideoMapper
+import com.example.data.mapper.WebMapper
 import com.example.data.repository.dataSource.LocalSearchHistoryDataSource
 import com.example.data.repository.repositoryImpl.SearchHistoryRepositoryImpl
 import com.example.data.repositoryImpl.RemoteImageRepositoryImpl

@@ -1,9 +1,9 @@
-package com.example.data.remote.paging
+package com.example.data.paging
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.example.data.remote.api.VideoApi
-import com.example.data.remote.mapper.VideoMapper
+import com.example.data.api.VideoApi
+import com.example.data.mapper.VideoMapper
 import com.example.domain.model.VideoEntity
 
 class VideoPagingSource(

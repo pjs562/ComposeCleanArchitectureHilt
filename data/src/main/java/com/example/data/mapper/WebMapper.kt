@@ -1,8 +1,8 @@
-package com.example.data.remote.mapper
+package com.example.data.mapper
 
 import com.example.data.extensions.decode
-import com.example.data.remote.response.WebInfo
-import com.example.data.remote.response.WebResponse
+import com.example.data.response.WebInfo
+import com.example.data.response.WebResponse
 import com.example.domain.model.WebEntity
 
 class WebMapper {

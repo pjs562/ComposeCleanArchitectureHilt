@@ -1,6 +1,6 @@
 package com.example.data.api
 
-import com.example.data.remote.response.ImageResponse
+import com.example.data.response.ImageResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 

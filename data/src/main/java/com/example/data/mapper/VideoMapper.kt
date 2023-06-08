@@ -1,7 +1,7 @@
-package com.example.data.remote.mapper
+package com.example.data.mapper
 
-import com.example.data.remote.response.VideoInfo
-import com.example.data.remote.response.VideoResponse
+import com.example.data.response.VideoInfo
+import com.example.data.response.VideoResponse
 import com.example.domain.model.VideoEntity
 
 class VideoMapper {

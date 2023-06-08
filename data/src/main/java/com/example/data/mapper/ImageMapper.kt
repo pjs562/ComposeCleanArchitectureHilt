@@ -1,7 +1,7 @@
-package com.example.data.remote.mapper
+package com.example.data.mapper
 
-import com.example.data.remote.response.ImageInfo
-import com.example.data.remote.response.ImageResponse
+import com.example.data.response.ImageInfo
+import com.example.data.response.ImageResponse
 import com.example.domain.model.ImageEntity
 
 class ImageMapper {

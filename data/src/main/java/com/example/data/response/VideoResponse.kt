@@ -1,4 +1,4 @@
-package com.example.data.remote.response
+package com.example.data.response
 
 import com.squareup.moshi.Json
 

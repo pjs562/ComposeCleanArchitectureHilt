@@ -1,6 +1,6 @@
-package com.example.data.remote.api
+package com.example.data.api
 
-import com.example.data.remote.response.VideoResponse
+import com.example.data.response.VideoResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 

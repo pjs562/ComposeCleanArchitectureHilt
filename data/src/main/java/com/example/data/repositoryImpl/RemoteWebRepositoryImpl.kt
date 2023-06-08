@@ -1,11 +1,11 @@
 package com.example.data.repositoryImpl
 
-import com.example.data.remote.api.WebApi
+import com.example.data.api.WebApi
 import com.example.domain.repository.WebRepository
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
-import com.example.data.remote.mapper.WebMapper
-import com.example.data.remote.paging.WebPagingSource
+import com.example.data.mapper.WebMapper
+import com.example.data.paging.WebPagingSource
 
 class RemoteWebRepositoryImpl constructor(
     private val webApi: WebApi,

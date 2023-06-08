@@ -3,8 +3,8 @@ package com.example.data.repositoryImpl
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import com.example.data.api.ImageApi
-import com.example.data.remote.mapper.ImageMapper
-import com.example.data.remote.paging.ImagePagingSource
+import com.example.data.mapper.ImageMapper
+import com.example.data.paging.ImagePagingSource
 import com.example.domain.repository.ImageRepository
 
 class RemoteImageRepositoryImpl (

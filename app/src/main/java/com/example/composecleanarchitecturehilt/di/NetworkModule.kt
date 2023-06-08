@@ -1,8 +1,8 @@
 package com.example.composecleanarchitecturehilt.di
 
 import com.example.data.api.ImageApi
-import com.example.data.remote.api.VideoApi
-import com.example.data.remote.api.WebApi
+import com.example.data.api.VideoApi
+import com.example.data.api.WebApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

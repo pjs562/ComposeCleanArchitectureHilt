@@ -1,9 +1,9 @@
 package com.example.composecleanarchitecturehilt.di
 
 import com.example.data.mapper.SearchHistoryMapper
-import com.example.data.remote.mapper.ImageMapper
-import com.example.data.remote.mapper.VideoMapper
-import com.example.data.remote.mapper.WebMapper
+import com.example.data.mapper.ImageMapper
+import com.example.data.mapper.VideoMapper
+import com.example.data.mapper.WebMapper
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
