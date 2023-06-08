@@ -16,7 +16,7 @@
 - [Compose](https://developer.android.com/jetpack/compose) 
 - [Navigation](https://developer.android.com/guide/navigation)
 - [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) 
-  - [Flow](https://developer.android.com/kotlin/flow))
+  - [Flow](https://developer.android.com/kotlin/flow)
   - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
 - [Hilt](https://dagger.dev/hilt/)
 - [Paging3.0](https://developer.android.com/topic/libraries/architecture/paging/v3-overview)
