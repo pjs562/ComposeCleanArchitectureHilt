@@ -35,13 +35,13 @@ fun HomeScreen(navController: NavController, modifier: Modifier) {
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Spacer(modifier = Modifier.padding(25.dp))
+        Spacer(modifier = Modifier.padding(30.dp))
         Icon(
             painter = painterResource(id = R.drawable.daum_logo),
             contentDescription = "daum",
             tint = MaterialTheme.colorScheme.primary
         )
-        Spacer(modifier = Modifier.padding(20.dp))
+        Spacer(modifier = Modifier.padding(28.dp))
         Button(
             onClick = { navController.navigate("searchList") },
             modifier = Modifier
