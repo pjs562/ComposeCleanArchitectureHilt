@@ -4,7 +4,7 @@ import com.example.data.entities.SearchHistoryEntity
 import kotlinx.coroutines.flow.Flow
 
 interface LocalSearchHistoryDataSource {
-    fun getSearchHistories(): Flow<List<SearchHistoryEntity>>
+    fun getSearchHistoryList(): Flow<List<SearchHistoryEntity>>
 
     suspend fun insert(item: SearchHistoryEntity)
 

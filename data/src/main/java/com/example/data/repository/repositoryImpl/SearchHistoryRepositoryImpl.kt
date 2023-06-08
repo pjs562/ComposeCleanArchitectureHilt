@@ -11,14 +11,13 @@ class SearchHistoryRepositoryImpl(
     private val localSearchHistoryDataSource: LocalSearchHistoryDataSource,
     private val searchHistoryMapper: SearchHistoryMapper
 ): SearchHistoryRepository {
-    override fun getSearchHistories(): Flow<List<SearchHistory>> = localSearchHistoryDataSource.getSearchHistories().map { 
+    override fun getSearchHistoryList(): Flow<List<SearchHistory>> = localSearchHistoryDataSource.getSearchHistoryList().map {
         searchHistoryEntityList -> 
         searchHistoryEntityList.map { 
             searchHistoryEntity ->
             searchHistoryMapper.entityToDomain(searchHistoryEntity)
         }
     }
-    
 
     override suspend fun insertSearchHistory(item: SearchHistory) = localSearchHistoryDataSource.insert(searchHistoryMapper.domainToEntity(item))
 

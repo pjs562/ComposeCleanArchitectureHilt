@@ -32,18 +32,14 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.core:core-ktx:1.10.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    implementation "androidx.paging:paging-compose:1.0.0-alpha20"
-
-    //ROOM DB
-    implementation "androidx.room:room-ktx:$room_version"
-
-    //GSON
-    implementation 'com.google.code.gson:gson:2.9.0'
+    // Android에 대한 의존성을 제거하고, 테스트와 같은 환경에서도 사용할 수 있는 Paging3
+    def paging_version = "3.1.1"
+    implementation "androidx.paging:paging-common:$paging_version"
 }

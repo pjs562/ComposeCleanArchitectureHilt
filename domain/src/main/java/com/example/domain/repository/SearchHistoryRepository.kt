@@ -4,7 +4,7 @@ import com.example.domain.model.SearchHistory
 import kotlinx.coroutines.flow.Flow
 
 interface SearchHistoryRepository {
-    fun getSearchHistories(): Flow<List<SearchHistory>>
+    fun getSearchHistoryList(): Flow<List<SearchHistory>>
 
     suspend fun insertSearchHistory(item: SearchHistory)
 

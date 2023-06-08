@@ -6,7 +6,7 @@ import com.example.data.repository.dataSource.LocalSearchHistoryDataSource
 import kotlinx.coroutines.flow.Flow
 
 class LocalSearchHistoryDataSourceImpl(private val searchHistoryDao: SearchHistoryDao) : LocalSearchHistoryDataSource{
-    override fun getSearchHistories(): Flow<List<SearchHistoryEntity>> = searchHistoryDao.getSearchHistories()
+    override fun getSearchHistoryList(): Flow<List<SearchHistoryEntity>> = searchHistoryDao.getSearchHistoryList()
 
     override suspend fun insert(item: SearchHistoryEntity) = searchHistoryDao.insert(item)
 

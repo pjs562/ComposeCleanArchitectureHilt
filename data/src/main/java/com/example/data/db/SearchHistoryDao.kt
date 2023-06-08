@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface SearchHistoryDao {
     @Query("SELECT * FROM search_history ORDER BY timestamp DESC")
-    fun getSearchHistories(): Flow<List<SearchHistoryEntity>>
+    fun getSearchHistoryList(): Flow<List<SearchHistoryEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(item: SearchHistoryEntity)

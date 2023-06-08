@@ -8,31 +8,35 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.domain.model.SearchHistory
+import com.example.domain.usecase.DeleteSearchHistoryUseCase
+import com.example.domain.usecase.GetSearchHistoryListUseCase
+import com.example.domain.usecase.InsertSearchHistoryUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
-import com.example.domain.usecase.SearchHistoryUseCase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 @HiltViewModel
 class SearchListViewModel @Inject constructor(
-    private  val searchHistoryUseCase: SearchHistoryUseCase,
+    getSearchHistoryListUseCase: GetSearchHistoryListUseCase,
+    private val insertSearchHistoryUseCase: InsertSearchHistoryUseCase,
+    private val deleteSearchHistoryUseCase: DeleteSearchHistoryUseCase,
     application: Application
 ) : AndroidViewModel(application){
 
-    val searchHistories = searchHistoryUseCase()
+    val searchHistories = getSearchHistoryListUseCase()
     private val vibrator = ContextCompat.getSystemService(application, Vibrator::class.java)
 
     fun insertSearchHistory(query: String) {
         val searchHistory = SearchHistory(query = query, timestamp = System.currentTimeMillis())
         viewModelScope.launch(Dispatchers.IO) {
-            searchHistoryUseCase.insertSearchHistory(searchHistory)
+            insertSearchHistoryUseCase(searchHistory)
         }
     }
 
     fun deleteSearchHistory(item: SearchHistory){
         viewModelScope.launch(Dispatchers.IO) {
-            searchHistoryUseCase.deleteSearchHistory(item.query)
+            deleteSearchHistoryUseCase(item.query)
         }
     }
 
