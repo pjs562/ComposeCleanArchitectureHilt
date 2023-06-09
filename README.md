@@ -1,5 +1,7 @@
 # ComposeCleanArchitectureHilt
-**cloned the Google Search app using the following kakao API." a minimalistic Android application Built with Clean architecture and Jetpack component (Jetpack Compose, MVVM , Paging
+**It's an app similar to the Google Search app, but utilizes the Kakao API.
+
+A minimalistic Android application Built with Clean architecture and Jetpack component (Jetpack Compose, MVVM , Paging
 3.0, HILT, ROOM DB, Retrofit, and many more …). It was made to describe the latest android development trend. This app will be updated further to adapt to latest development trend***
 
 ## <br/><br/>Screenshort 📸
